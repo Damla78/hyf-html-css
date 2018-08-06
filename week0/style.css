@@ -1,0 +1,114 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+html,body{
+  height:100%;
+  width:100%;
+  font-family: 'Knewave', cursive;
+}
+
+nav{  
+  position:absolute;
+  height:100px;
+  width:100%;
+  text-align:center;
+  line-height:150px;  
+  font-size:20px;  
+}
+nav a{
+  color:black;
+  text-decoration:none;
+  margin-left:5px;
+  padding:10px 10px 10px 10px;
+}
+a:hover{
+  background-color:grey;
+  border-radius: 10px;
+}
+.clsHalfPage{
+  height:50%;
+  background-color: lightpink;
+  
+}
+.clsMainPage{
+  height:100%;
+  margin:0px 0px 0px 0px;
+  padding:30px 30px 30px 30px;
+  background-size: cover;
+  background-attachment:fixed;
+}
+
+#idMainPage{
+  background-image: url("http://mutfaktadekorasyon.com/wp-content/uploads/posts/23/-8.jpg");
+  
+}
+
+
+table, tr,td{
+  border: 1px solid black;
+  border-spacing:5px;
+  
+}
+
+
+
+#idContact{
+  background-image:url("http://mutfaktadekorasyon.com/wp-content/uploads/posts/23/-12.jpg");
+  background-repeat:no-repeat;
+  
+}
+#idText{
+  position:relative;
+  left:40%;
+  top:40%;
+}
+.clsMainText{
+  width:100%;
+  height:100%;  
+  text-align:center;
+  padding-top:200px;
+}
+.clsMainText h1{
+  font-size:30px;
+}
+
+.clsIngredientPhoto{
+  float:left;   
+  
+  
+}
+.clsIngredient{
+  position:absolute;
+  right:30%;
+  
+}
+img {
+  width:400px;
+  border-radius:10%;
+}
+#idMenu{
+  background-image: url("https://kingfisher.scene7.com/is/image/Kingfisher/IT_Kitchen_Stonefield_Stone_Classic_Style_Close_Up_1?crop=0,0,2483,1638&anchor=1241,819&$PROMO_940_620$");
+  
+}
+#idTavukCorbasi,
+#idCacik,
+#idBaklava,
+#idSultanKebabi,
+#idMercimekCorbasi,
+#idCobanSalatasi,
+#idGulTatlisi,
+#idAliNazikKebabi,
+#idLebeniye,
+#idPiyaz,
+#idSultanLokumu,
+#idTavukluKebap{
+  background-image: url("https://kingfisher.scene7.com/is/image/Kingfisher/IT_Kitchen_Stonefield_Stone_Classic_Style_Close_Up_1?crop=0,0,2483,1638&anchor=1241,819&$PROMO_940_620$");
+}
+
+
+.clsFooter{
+  position:relative;
+  bottom:-80%; 
+  
+}
