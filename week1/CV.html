@@ -7,9 +7,11 @@
       <!--<script src="myscript.js">-->
       <title>Rabia van der Karapinar</title>
   </head>
-  <body role="document">
-    <header aria-labelledby="personel-information">
-      <img class="clsHeaderPhoto clsHeader" src="rabia.bmp" alt="My foto" role="img" id="personel-information"/>  
+  <body>
+    <header>
+        <p id="my-photo">My picture is taken in August 2003</p>
+      <img class="clsHeaderPhoto clsHeader" src="rabia.bmp" alt="My Photo" aria-labelledby="my-photo"/>  
+      
         <div>
           <h1 class="clsHeader" role="heading" aria-level="1">RABIA KARAPINAR</h1>
           <p class="clsHeader">Punter 56 1186RE Amstelveen<br>06 268 444 30<br>
@@ -17,10 +19,17 @@
         </div>
     </header>
 
-      <h2 role="heading" aria-level="2" aria-labelledby="educational-background">EDUCATIONAL BACKGROUND</h2>
-      <table role="table" id="educational-background">
+      <h2>EDUCATIONAL BACKGROUND</h2>
+      <table>
+          <caption>A summary of my educational background</caption>
+          <thead>
+            <tr>
+              <th scope="col" class="first-col">Years</th>
+              <th scope="col">Name of the School</th>
+            </tr>
+          </thead>
         <tr>
-          <td class="first-col">2013 - 2015</td>
+          <td >2013 - 2015</td>
           <td>Melikşah University, Kayseri M.S. deg. in Computer Engineering (English)
                     “EVALUATION of WEB IMAGE SEARCH ENGINES”</td> 
         </tr>
@@ -48,8 +57,8 @@
             <td>Elementary - A2</td> 
           </tr>
         </table>
-        <h2 role="heading" aria-level="2" aria-labelledby="work-experiences">WORK EXPERIENCES</h2>
-          <table role="table" id="work-experiences">
+        <h2>WORK EXPERIENCES</h2>
+          <table>
             <tr>
               <td class="first-col"> March 06 – July 07</td>
               <td>Venero Yazılım İstanbul<br>Work on C#</td> 
@@ -77,8 +86,8 @@
               <td>IDEAL   İstanbul - (INTERNSHIPS)<br>Work on Pascal, Delphi, MAPINFO</td> 
             </tr>
           </table>
-          <h2 role="heading" aria-level="2" aria-labelledby="computer-skills">COMPUTER SKILLS</h2>
-          <table role="table" id="computer-skills">
+          <h2>COMPUTER SKILLS</h2>
+          <table>
             <tr>
               <td>Java, C, C#, JSP, C++ Builder, Pascal, Delphi, Visual Basic, Prolog, IBM Assembly
                     Access, SQL Server 2000, Oracle 9i
@@ -87,22 +96,22 @@
                     OLAP</td>
             </tr>
           </table>
-          <h2 role="heading" aria-level="2" aria-labelledby="article">ARTICLES</h2>
-          <table role="table" id="article">
+          <h2>ARTICLES</h2>
+          <table>
             <tr>
               <td>Ahmet Uyar, Rabia Karapinar:
             Investigating the precision of Web image search engines for popular and less popular 
             entities. J. Information Science 43(3): 378-392 (2017)</td>
             </tr>
           </table>
-          <h2 role="heading" aria-level="2" aria-labelledby="social-activities">SOCIAL ACTIVITIES</h2>
-          <table role="table" id="social-activities">
+          <h2>SOCIAL ACTIVITIES</h2>
+          <table>
             <tr>
               <td>Cooking, reading, sewing…</td>
             </tr>
           </table>
             
-          <table role="table">
+          <table>
             <tr aria-labelledby="marital-status">
               <td class="first-col">Marital Status</td><td id="marital-status">Married</td>
             </tr>
@@ -116,5 +125,25 @@
               <td>References</td><td id="references">Phones and emails are available upon request</td>
             </tr>
           </table>
+          <h2>LEARNING STRATEGIES</h2>  
+            <nav role="navigation">          
+              <ul>
+                <li><a href="http://www.learningscientists.org/videos/">Six Strategies for Effective 
+                  Learning</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/tag/HTML">Articles Tagged</a></li>
+                <li><a href="http://html5doctor.com/">HTML Codes</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+              </ul>
+            </nav>
+          <h2>MORE PLATFORMS AND RESOURCES</h2>
+            <nav role="navigation">
+              <ul>
+                <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+                <li><a href="https://codepen.io/">Code Pen</a></li>
+                <li><a href="https://trello.com/">Trello</a></li>
+                <li><a href="https://github.com/">GitHub</a></li>
+                <li><a href="https://slack.com/">Slack</a></li>
+              </ul>
+            </nav>
  </body>
 </html>
