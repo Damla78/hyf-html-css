@@ -1,21 +1,74 @@
-.clsHeader {
-    text-align: center;
-    
-    
-    width: auto;
-}
-.clsHeaderPhoto{
-    padding-right: 20px;
-    width: 12%;
-    float: left;
-}
-body{
+*{
+    margin:0px;
+    padding:0px;
+  }
+  html, body{
+      background-color: aliceblue;
+      color: black;
+      height:100%;
+  }
+  .clsMain{
+      background-color: black; 
+      color: white;       
+      width: 100%;
+      height:100%; 
+      /*border: 5px solid silver;*/
+  }
+  nav{
+      width:    60%;
+      position: fixed;
+      top:0px;
+      z-index: 1;
+      text-align: right;
+      font: italic bold 12px/30px Georgia, serif;
+      
+  }
+  nav a{
+      color: white;
+      text-shadow: 3px 2px black;
+      text-decoration:none;
+      margin-left:5px;
+      padding:10px;
+  }
+  a:hover{
+    background-color:cornflowerblue;
+    border-radius: 10px;
+  }
+
+  .left_side{
+      width: 30%;
+      height: 100%;
+      float: left;
+  }
+  .right_side{
+      float: right;
+      width: 68%;
+      /*position: relative;
+      left: 30%;
+      
+      height: 100%;*/
+      /*clear: left;*/
+  }
+  #id_side1_photo{
+      height: 100%;
+  }
+  #id_my_photo{
+      float: left;
+      border-radius: 25px;
+      margin-top: 20%;
+      margin-left: 15%;
+      margin-right: 3%;
+  }
+  .clsHeader{
+    margin-top: 20%;
+  }
+  .cls_content{
     padding: 70px;
     font: tahoma;
     font-size: 20px;
-}
-
-table{
+    clear: both;
+  }
+  table{
     width: 80%;
     
     border-spacing: 8px;
@@ -24,3 +77,39 @@ table{
 .first-col{
     width:20%;
 }
+.cls_space{
+    margin: 5%;
+}
+
+/*Social Media */
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
