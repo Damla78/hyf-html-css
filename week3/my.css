@@ -1,1 +1,126 @@
+*{box-sizing:border-box}
+body{
+    margin: 0;
+}
+.logo{
+    padding-left:15px;
+    padding-right:15px;
+    max-width:1200px
+}
+.wrapper{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo .wrapper img{
+    display: inline-block;
+}
+.logo .wrapper{
+    margin: 0 0 0 50%;
+}
+#header::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+#navBar{
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #01689b;    
+    padding: 30px;
+    
+}
+.breadCrumbNav{
+    /*display: inline;*/
+    float: left;
+    font-size:1.33333rem!important;
+    letter-spacing:0;
+    line-height:normal;
+    padding:15px 0px 18px 48px;
+    
+}
+#navBar .wrapper .breadCrumbNav {
+    float: left;
+    width: 33.33333%;
+}
+#navBar .wrapper .breadCrumbNav a{
+    font-size: 1.625rem;
+    color:#fff;
+    text-decoration: none;
+}
+.mainNav a {
+    margin: 5px 15px 5px 15px;
+    padding: 5px 0 5px 0;
+    width: calc(100% - 30px);
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border-top: 1px solid #fff;
+}
+a:visited {
+    color: #767676;
+}
+@media (min-width: 768px){
+.mainNav{
+    text-align: right;
+    
+}
+.mainNav a {
+    margin: 5px 15px 0 30px;
+    display: inline-block;
+    width: auto;
+    border: 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+#main::before{
+    content: "";
+    clear: both;
+    display: table;
+}
+/*#main {background-color:#e5f0f9; border: 5px solid goldenrod;}*/
+#main .headerImage .wrapper{
+    margin :15px 15px 15px 30px;
+    /*margin-right:auto;
+    margin-left:auto;*/
+    padding:5px 5px 5px 5px;
+    max-width:1200px;
+    min-width: 415px;
+    width: 30%;
+    background-color:#e5f0f9;
+    border: 5px solid black;
+    z-index: 10;
+}
+.headerImage .wrapper .topTaskNavigation ul li a {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #01689b;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-decoration: none;
+    width: auto;
+    
+    word-wrap: break-word;
+    z-index: 1;
+}
+.slide.showSlide{
+    background-image: url("./pictures/schoolvakantie.jpg");
+    position: absolute;
+    display: inline-block;    
+    left: 0;
+    top: 39%;
+    width: 100%;
+    height: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    z-index: -1;
+    border: 5px solid blue;
+    opacity: 1;
+}
+}
+
 
