@@ -334,7 +334,10 @@ form.example::after {
 #main .headerImage .wrapper{
     width: 95%;
 }
+
+.navItem{ padding: 2.5%;}
 .brick{
+    padding: 2.5%;
     width: 50%;
 }
 #footer .wrapper .payoff{
