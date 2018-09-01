@@ -1,7 +1,25 @@
 *{box-sizing:border-box}
 body{
     margin: 0;
+    font-size: 112.5%;
+      font-family: "RO Sans",Calibri,sans-serif;
+      line-height: 1.625;
 }
+div{display: block;}
+a{
+    text-decoration: none;
+    color: #01689b;
+}
+a:hover {
+    text-decoration: underline;/*Quest2 h3 and p are in sametime made underline. I wanna make only <a>*/
+}
+a:visited {
+    color: #767676;    
+}
+p{
+    color: black;
+}
+
 .logo{
     padding-left:15px;
     padding-right:15px;
@@ -18,109 +36,377 @@ body{
 .logo .wrapper{
     margin: 0 0 0 50%;
 }
-#header::after{
+#header::after, #main::before, #main::after , .headerImage::before, 
+.topTaskNavigation::after, .editorialNavigation::after , .editorialNavigation .wrapper .fourItems::before, .editorialNavigation .wrapper .fourItems::after,
+#footer .wrapper::before, #footer .wrapper::after,.more::before{
     content: "";
     clear: both;
     display: table;
 }
 #navBar{
-    display: block;
+    /*display: block;*/
+    position: relative;
     margin-left: 0;
     margin-right: 0;
     background-color: #01689b;    
-    padding: 30px;
+    /*padding: 20px;*/
     
 }
 .breadCrumbNav{
-    /*display: inline;*/
-    float: left;
+    display: inline;
+    /*float: left;*/
     font-size:1.33333rem!important;
     letter-spacing:0;
     line-height:normal;
-    padding:15px 0px 18px 48px;
-    
+    /*padding:0 0 0 10px;*/
 }
 #navBar .wrapper .breadCrumbNav {
     float: left;
-    width: 33.33333%;
+    /*width: 33.33333%;*/
 }
 #navBar .wrapper .breadCrumbNav a{
+    margin: 5px 10px 5px 10px;
+    padding: 10px 10px 10px 10px;
     font-size: 1.625rem;
     color:#fff;
-    text-decoration: none;
 }
-.mainNav a {
-    margin: 5px 15px 5px 15px;
-    padding: 5px 0 5px 0;
-    width: calc(100% - 30px);
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    border-top: 1px solid #fff;
-}
-a:visited {
-    color: #767676;
-}
-@media (min-width: 768px){
 .mainNav{
     text-align: right;
-    
 }
 .mainNav a {
     margin: 5px 15px 0 30px;
+    padding: 5px 0 5px 0;
     display: inline-block;
     width: auto;
-    border: 0;
-    font-size: 1.2rem;
     color: #fff;
+    font-size: 1.2rem;
 }
-#main::before{
+/*SEARCH*/
+form.example{
+    width: 300px;
+    
+    
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
     content: "";
     clear: both;
     display: table;
 }
-/*#main {background-color:#e5f0f9; border: 5px solid goldenrod;}*/
-#main .headerImage .wrapper{
-    margin :15px 15px 15px 30px;
-    /*margin-right:auto;
-    margin-left:auto;*/
-    padding:5px 5px 5px 5px;
-    max-width:1200px;
-    min-width: 415px;
-    width: 30%;
-    background-color:#e5f0f9;
-    border: 5px solid black;
-    z-index: 10;
+/*SEARCH FINISH*/
+
+.headerImage{
+    position: relative; 
+    margin-top: 0; 
+    min-height:280px;
+    overflow:hidden;
 }
-.headerImage .wrapper .topTaskNavigation ul li a {
-    position: relative;
-    display: block;
-    padding-left: 20px;
-    font-weight: bold;
+.editorialNavigation{
+    background-color: #e5f0f9;
+    margin-top:0;
+    /*border: 5px solid blue;*/
+}
+.editorialNavigation .wrapper .fourItems .navItem a{
     color: #01689b;
-    font-size: 1.125rem;
-    line-height: 1.625rem;
-    text-decoration: none;
-    width: auto;
-    
-    word-wrap: break-word;
-    z-index: 1;
-}
-.slide.showSlide{
-    background-image: url("./pictures/schoolvakantie.jpg");
-    position: absolute;
-    display: inline-block;    
-    left: 0;
-    top: 39%;
-    width: 100%;
-    height: 60%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    z-index: -1;
-    border: 5px solid blue;
-    opacity: 1;
-}
+    /*display: block;*/
 }
 
+.brickRow{
+    box-sizing:border-box;
+    margin: 5%;
+    width:90%;
+    overflow: auto;
+}
+.brick{
+    box-sizing:border-box;
+    display: block;
+    float:left;
+    padding: 2.5%;
+    padding-top: 0;
+    
+    overflow: hidden;
+    position: relative;
+}
+.brick a img{
+    width: 100%;    
+}
+.brick a .copyright{
+    position: absolute;
+    color: #fff;
+    top:40%;/*Question: How can I fix on image*/
+}
+.wrapper .fullwidthSection .brickRow .brick h3, .wrapper .fullwidthSection .brickRow .brick p{
+    display: inline-block;
+    word-wrap:break-word;
+}
+.brickRow.nieuws{
+    border-top:1px solid #e1e1e1;
+}
+.brickRow.nieuws h2 , .more{
+    padding-left:2.5%;
+}
+.publDate, .more{
+    font-weight: bold;
+}
+#aside{
+    padding-left:5%;
+}
+
+#footer{
+    margin: 0;
+    padding: 0;
+    background-color: #01689b;
+}
+#footer .wrapper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    /*max-width: 1200px;*//*???*/
+    width: 100%;/*???*/
+
+    
+    color: #fff;
+    
+}
+#footer .wrapper a{
+    color: #fff;
+}
+#footer .wrapper .payoff{
+    float: left;
+    width: 60%;
+    font-size: 1.75em;
+    line-height: 1.2381;
+    font-style: italic;
+}
+#footer .wrapper .column{
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.2381;
+    font-style: italic;
+    
+}
+.languages{
+    margin: 0;
+    background-color: #fff;
+}
+
+#footer .languages .wrapper{/*Ques3- How can it be centeralized*/
+    float: left;
+    text-align: center;
+}
+#footer .languages .wrapper ul{
+    display: inline-block;
+    padding: 0;
+}
+/*#footer .languages .wrapper li{
+    display: inline;
+}*/
+
+#footer .languages .wrapper ul a{
+    color: #01689b;
+}
+#footer .languages .wrapper ul  .selected{
+    display: inline-block;/*new*/
+    color:black;
+    font-weight: bold;
+    border-color: #fff;
+}
+#footer .languages .wrapper ul li{
+    display: inline-block;/*new*/
+    color: #01689b;
+    list-style-type: none;
+    border:1px solid #01689b;
+    padding: 5px;
+    margin: 5px;
+}
+#main .headerImage .wrapper{
+        margin: 15px 15px 15px 15px;
+        padding:5px 5px 5px 5px;
+        max-width:1200px;
+        width: 30%;
+        background-color:#e5f0f9;
+    }
+    .headerImage .wrapper .topTaskNavigation ul li a {
+        padding-left: 20px;
+        font-weight: bold;
+        color: #01689b;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        width: auto;
+        word-wrap: break-word;
+        z-index: 10;
+    }
+    .slide.showSlide{
+        background-image: url("./pictures/schoolvakantie.jpg");
+        position: absolute;
+        /*display: inline-block;    */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        z-index: -1;
+        /*opacity: 1;*/
+    }
+
+@media(max-width: 768px ){/*480px*//*Ques-When the screen is small, I see bottom scrollbar. I couldn't find Which one is oversize */
+    body{
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
+    .mainNav .menuList{
+        display: none;
+    }
+    /*MENU*/
+    .container {
+        display: inline-block;
+        cursor: pointer;        
+        margin: 5px 15px 0 30px;
+    }
+    .bar1,.bar2,.bar3 {
+        /*position: absolute;
+        display: inline-block;*/
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    /* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}/*MENU FINISH*/
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+.change .menuList{
+    display: block;
+    border-bottom: 1px solid white;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+#main .headerImage .wrapper{
+    width: 95%;
+}
+.brick{
+    width: 50%;
+}
+#footer .wrapper .payoff{
+    width: 80%;
+}
+#footer .wrapper .column{
+/*    display: block;
+    font-size: 1em;
+    line-height: 1.2381;
+    font-style: italic;
+    border: 1px solid black;*/
+    width: 40%;
+}
+
+
+}
+
+@media (min-width: 768px){
+    
+    /*body{
+        font-size: 112.5%;
+      font-family: "RO Sans",Calibri,sans-serif;
+      line-height: 1.625;
+    }*/
+
+/*.mainNav a {
+    margin: 5px 15px 0 30px;
+    display: inline-block;
+    width: auto;
+    border: 0;
+    
+    color: #fff;
+}*/
+/*#main::before , .headerImage::before{
+    content: "";
+    clear: both;
+    display: table;
+}*/
+
+form.example{/*For Search Button*/
+    position: absolute;
+    right: 5%;
+    top: 150%;    
+}
+
+.fourItems{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /*margin: 0;
+    border:0;*/
+    padding: 2.5%;
+}
+
+.editorialNavigation .wrapper .fourItems .navItem{
+    box-sizing:border-box;
+    word-wrap: break-word;
+    width: 22.5%;
+}
+.brick{
+    width: 33.3333%;
+}
+}
+@media(min-width:992){/*For Search Button*/
+    form.example{
+        position: absolute;
+        right: 5%;
+        top:200%;
+    }
+    .brick{
+        width: 33.3333%;
+    }
+    
+}
 
