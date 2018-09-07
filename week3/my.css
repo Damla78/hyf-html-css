@@ -84,8 +84,6 @@ p{
 /*SEARCH*/
 form.example{
     width: 300px;
-    
-    
 }
 form.example input[type=text] {
     padding: 10px;
@@ -139,16 +137,18 @@ form.example::after {
     box-sizing:border-box;
     margin: 5%;
     width:90%;
-    overflow: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
 .brick{
-    box-sizing:border-box;
-    display: block;
+    /*box-sizing:border-box;*/
+    /*display: block;*/
     float:left;
+    flex: 0 0 auto;
     padding: 2.5%;
     padding-top: 0;
-    
-    overflow: hidden;
+    width: 50%;
     position: relative;
 }
 .brick a img{
@@ -160,13 +160,15 @@ form.example::after {
     top:40%;/*Question: How can I fix on image*/
 }
 .wrapper .fullwidthSection .brickRow .brick h3, .wrapper .fullwidthSection .brickRow .brick p{
-    display: inline-block;
+    /*display: inline-block;*//*AA*/
     word-wrap:break-word;
+   
 }
 .brickRow.nieuws{
     border-top:1px solid #e1e1e1;
 }
 .brickRow.nieuws h2 , .more{
+    width:100%;
     padding-left:2.5%;
 }
 .publDate, .more{
@@ -200,7 +202,7 @@ form.example::after {
 }
 #footer .wrapper .payoff{
     float: left;
-    width: 60%;
+    width: 50%;
     font-size: 1.75em;
     line-height: 1.2381;
     font-style: italic;
@@ -325,6 +327,9 @@ form.example::after {
     from { opacity: 0; }
       to { opacity: 1; }
 }
+form.example{
+    width: 100%;
+}
 .change .menuList{
     display: block;
     border-bottom: 1px solid white;
@@ -340,11 +345,10 @@ form.example::after {
     margin-top: 2.5%;
 }
 .brick{
-    padding-left: 2.5%;
-    width: 50%;
+    width: 100%;
 }
-#footer .wrapper .payoff{
-    width: 80%;
+#footer .wrapper .payoff {
+    width: 100%;
 }
 #footer .wrapper .column{
 /*    display: block;
@@ -358,7 +362,7 @@ form.example::after {
 
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 991px){
     
     /*body{
         font-size: 112.5%;
@@ -385,10 +389,13 @@ form.example{/*For Search Button*/
     right: 5%;
     top: 150%;    
 }
+.brick{
+    width: 50%;
+}
 
 .fourItems{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     /*margin: 0;
     border:0;*/
@@ -396,15 +403,14 @@ form.example{/*For Search Button*/
 }
 
 .editorialNavigation .wrapper .fourItems .navItem{
-    box-sizing:border-box;
+    /*box-sizing:border-box;*/
     word-wrap: break-word;
-    width: 22.5%;
+    width: 50%;
+    padding: 1%;
 }
-.brick{
-    width: 33.3333%;
+
 }
-}
-@media(min-width:992){/*For Search Button*/
+@media(min-width: 992px){/*For Search Button*/
     form.example{
         position: absolute;
         right: 5%;
@@ -413,6 +419,25 @@ form.example{/*For Search Button*/
     .brick{
         width: 33.3333%;
     }
+
+    .fourItems{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        /*margin: 0;
+        border:0;*/
+        padding: 2.5%;
+    }
+    
+    .editorialNavigation .wrapper .fourItems .navItem{
+        box-sizing:border-box;
+        word-wrap: break-word;
+        width: 22.5%;
+        padding: 1%;
+    }
+
+
+
     
 }
 
